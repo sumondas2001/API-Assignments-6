@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Blog Page</title>
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+     <header>
+
+     </header>
+     <main>
+          <h3 class="text-xl font-normal bg-red-400 p-10 m-6 rounded-md text-white">
+               1: Discuss the scope of var, let, and const <br> <br>
+               Var. <br>
+               1. Variables declared with var are function-scoped. This means that their scope is limited to the
+               function in which they are declared, or the global scope if declared outside of any function. <br>
+               2. Variables declared with var are hoisted to the top of their function or global scope. This means that
+               regardless of where a var declaration appears within a function, it is effectively "moved" to the top of
+               the function during execution.<br>
+               3. var declarations can lead to unexpected behavior due to hoisting and the lack of block scope, which
+               can cause variables to be accessible outside of their intended scope.
+
+
+               let: <br><br>
+               1. Variables declared with let are block-scoped. This means that their scope is limited to the block
+               (enclosed by curly braces {}) in which they are declared. <br>
+               2. let variables are not hoisted to the top of their block scope. They are only accessible after the
+               point
+               of declaration within their block. <br>
+               3. Re-declaring the same variable with let within the same block scope will cause a syntax error.
+               <br><br>
+
+
+               Const. <br>
+               1. Variables declared with const also have block scope like let. <br>
+               2. const variables must be initialized with a value at the time of declaration, and once initialized,
+               their value cannot be reassigned. <br>
+               3. However, it's important to note that const does not make the variable immutable; it only prevents
+               reassignment of the variable itself. If the variable holds an object or array, the properties or elements
+               of that object or array can still be modified.
+          </h3>
+          <h3 class="text-xl font-normal bg-orange-400 p-10 m-6 rounded-md text-white">
+               2 : Tell us the use cases of null and undefined <br> <br>
+               null:
+               1. null is a value that represents the intentional absence of any object value or no value at all. <br>
+               2. It can be used to explicitly indicate that a variable, property, or return value does not refer to any
+               object. <br>
+               3. Common use cases for null include: <br>
+               Initializing variables or properties to indicate that they don't have a value yet. <br>
+               4. Explicitly clearing or resetting values to indicate emptiness or lack of an object reference.
+
+               undefined:
+               1. undefined is a primitive value automatically assigned to variables or properties that have been
+               declared
+               2. but not initialized with a value. <br>
+               It indicates the absence of a meaningful value, often unintentional or implicit. <br>
+               3. Common use cases for undefined include:
+               Variables or properties that have not been assigned a value. <br>
+               4. Functions that don't return a value explicitly return undefined.
+          </h3>
+          <h3 class="text-xl font-normal bg-green-600 p-10 m-6 rounded-md text-white">
+               3: What do you mean by REST API? <br><br>
+
+               REST, which stands for Representational State Transfer, is an architectural style for designing networked
+               applications. A RESTful API (Application Programming Interface) is an API that adheres to the principles
+               of REST. Here's a breakdown of what this means:
+
+               Representational State Transfer (REST):
+
+               1. REST is an architectural style that defines a set of constraints to be used for creating web services.
+               It
+               was first introduced by Roy Fielding in his doctoral dissertation in 2000. <br>
+               2. RESTful systems are based on a client-server model where clients can make requests to servers, and
+               servers respond with representations of resources (such as JSON or XML). <br>
+               3. REST relies on stateless communication, meaning each request from a client to a server must contain
+               all
+               the information necessary to understand and process the request, and each response from the server to the
+               client contains all the information necessary to understand and process the response. This allows for
+               scalability and reliability in distributed systems. <br>
+               4. RESTful systems typically use standard HTTP methods (GET, POST, PUT, DELETE) for CRUD (Create, Read,
+               Update, Delete) operations on resources. <br>
+               5. RESTful APIs emphasize the use of URIs (Uniform Resource Identifiers) to identify resources and the
+               use
+               of hypermedia (such as links) to navigate between resources. <br> <br>
+               RESTful API: <br><br>
+
+               1. A RESTful API is an API that follows the principles of REST. This means it: <br>
+               2. Uses standard HTTP methods (GET, POST, PUT, DELETE) for CRUD operations. <br>
+               3. Operates on resources, which are identified by URIs.
+               Uses standard HTTP status codes to indicate the result of a request (e.g., 200 OK, 404 Not Found, 500
+               Internal Server Error). <br>
+               4. Uses hypermedia to enable clients to discover and navigate between resources. <br>
+               5. RESTful APIs are commonly used for building web services that can be consumed by a wide variety of
+               clients, including web browsers, mobile apps, and other servers. <br>
+               6. They offer a standardized way of interacting with web-based resources, making it easier to develop,
+               maintain, and integrate systems.
+
+          </h3>
+     </main>
+
+</body>
+
+</html>

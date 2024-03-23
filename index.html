@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>PH TUBE</title>
+     <!--tailwindCSs and daisyui  -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+     <header>
+        
+          <!-- navbar continner -->
+          <nav class="flex justify-between lg:mx-10 md:mx-5 mx-2 mt-5 ">
+               <img src="icon/Logo.png" alt="">
+               <button onclick="sortByView()" class="bg-slate-400 rounded-lg py-2 lg:px-4 md:px-4 px-2 text-white">Sort by view</button>
+               <!-- <button  >Blog</button> -->
+               <a href="blog.html"class="bg-red-600 text-white rounded-lg lg:px-4 md:px-4 px-3 py-2">Blog</a>
+
+          </nav>
+     </header>
+     <main>
+          <!-- category name -->
+          <div  class="mt-7">
+               <div  role="tablist" class=" text-center tabs-lifted flex justify-center " id="category-name">
+                    <!-- <a role="tab" class="tab">Tab 1</a>
+                    <a role="tab" class="tab tab-active [--tab-bg:yellow] [--tab-border-color:orange] text-primary">Tab 2</a>
+                    <a role="tab" class="tab">Tab 3</a> -->
+                  </div>
+               
+
+          </div>
+
+          <div id="card-continner" class=" grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6 mx-14 mt-10 " >
+               <!-- <div class="card card-compact w-96 bg-base-100 shadow-xl >
+                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Shoes!</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                  </div> -->
+                  
+          </div>
+          <!-- drawing continnet -->
+          <div id="drawing-continner" class="text-center ">
+
+          </div>
+     </main>
+
+     <!-- <img src="icon/Icon.png" alt=""> -->
+     
+
+
+     <!-- javascript link -->
+     <script src="js/phTube.js"></script>
+</body>
+
+</html>
